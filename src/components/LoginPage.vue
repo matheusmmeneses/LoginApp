@@ -82,7 +82,7 @@ export default {
   methods: {
     login() {
       const { username } = this;
-      console.log(username + "logged in")
+      this.$router.replace({name: "dashboard", params: { username: username} });
     },
 
     register() {
